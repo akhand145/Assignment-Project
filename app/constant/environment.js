@@ -1,0 +1,49 @@
+const env = {
+    PORT: process.env.PORT,
+    MONGODB_USER_URI: process.env.MONGODB_USER_URI,
+    NODE_ENV: process.env.NODE_ENV,
+    API_KEY: process.env.API_KEY,
+    SECRET_KEY: process.env.SECRET_KEY,
+    TOKEN_EXPIRES_IN: process.env.TOKEN_EXPIRES_IN,
+    OTP_DIGIT: process.env.OTP_DIGIT,
+    SALT_ROUND: process.env.SALT_ROUND,
+    OTP_EXPIRES_IN: process.env.OTP_EXPIRES_IN,
+    MAX_LOGIN_DEVICE: process.env.MAX_LOGIN_DEVICE,
+    PAGE: process.env.PAGE,
+    LIMIT: process.env.LIMIT,
+    BUCKET_NAME: process.env.AWS_S3_BUCKET,
+    AWS_REGION: process.env.AWS_REGION,
+    AWS_ACCESS_KEY: process.env.AWS_ACCESS_KEY,
+    AWS_SECRET_KEY: process.env.AWS_SECRET_KEY,
+    SMTP_HOST: process.env.SMTP_HOST,
+    SMTP_PORT: process.env.SMTP_PORT,
+    SMTP_USER: process.env.SMTP_USER,
+    SMTP_PASSWORD: process.env.SMTP_PASSWORD,
+    FRONTEND_BASE_URL_ADMIN: process.env.FRONTEND_BASE_URL_ADMIN,
+    FRONTEND_BASE_URL_WEB: process.env.FRONTEND_BASE_URL_WEB,
+    FIRE_BASE_KEY: process.env.FIRE_BASE_KEY,
+    FIRE_BASE_DATABASE_URL: process.env.FIRE_BASE_DATABASE_URL,
+    FIRE_BASE_MESSAGING_ID: process.env.FIRE_BASE_MESSAGING_ID,
+    FIRE_BASE_ACCOUNT_TYPE: process.env.FIRE_BASE_ACCOUNT_TYPE,
+    FIRE_BASE_PROJECT_ID: process.env.FIRE_BASE_PROJECT_ID,
+    FIRE_BASE_PRIVATE_KEY: process.env.FIRE_BASE_PRIVATE_KEY,
+    FIRE_BASE_PRIVATE_KEY_ID: process.env.FIRE_BASE_PRIVATE_KEY_ID,
+    FIRE_BASE_CLIENT_EMAIL: process.env.FIRE_BASE_CLIENT_EMAIL,
+    FIRE_BASE_CLIENT_ID: process.env.FIRE_BASE_CLIENT_ID,
+    FIRE_BASE_AUTH_URI: process.env.FIRE_BASE_AUTH_URI,
+    FIRE_BASE_TOKEN_URI: process.env.FIRE_BASE_TOKEN_URI,
+    FIRE_BASE_AUTH_PROVIDER_X509_CERT_URL: process.env.FIRE_BASE_AUTH_PROVIDER_X509_CERT_URL,
+    FIRE_BASE_CLIENT_X509_CERT_URL: process.env.FIRE_BASE_CLIENT_X509_CERT_URL,
+    STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
+    STRIPE_PUBLIC_KEY: process.env.STRIPE_PUBLIC_KEY
+  };
+  
+  const serverType = {
+    DEVELOPMENT: 'DEVELOPMENT',
+    STAGE: 'STAGE',
+    TEST: 'TEST',
+    PRODUCTION: 'PRODUCTION'
+  };
+  
+  module.exports = { env, serverType };
+  
